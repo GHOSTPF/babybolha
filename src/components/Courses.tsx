@@ -120,7 +120,7 @@ const Courses = () => {
                     ))}
                   </ul>
 
-                  <Button className="w-full bg-red-600 text-white font-semibold hover:opacity-90 transition">
+                  <Button className="w-full bg-red-600 text-white font-semibold hover:bg-red-700 transition">
                     Saiba Mais
                   </Button>
                 </div>

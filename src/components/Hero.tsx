@@ -35,18 +35,23 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button className="bg-red-700 hover:bg-red-800 text-white px-8 py-6 rounded-full text-lg font-semibold transition-all">
+          <Button
+            className="bg-gradient-to-r from-red-700 to-red-800 text-white px-8 py-6 rounded-2xl text-lg font-bold 
+            shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 ease-out flex items-center justify-center"
+          >
             Começar Agora
-            <ArrowRight className="ml-2" />
+            <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
 
           <Button
             variant="outline"
-            className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-blue-900 px-8 py-6 rounded-full text-lg font-semibold transition-all"
+            className="bg-yellow-400 text-white hover:text-white font-bold text-lg px-8 py-6 rounded-2xl flex items-center gap-2
+            shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 ease-out hover:bg-yellow-500 focus:outline-none border-none"
           >
-            <Play className="mr-2" /> Assistir Vídeo
+            <Play className="mr-2 w-5 h-5" /> Assistir Vídeo
           </Button>
         </div>
+
       </div>
     </section>
   );
